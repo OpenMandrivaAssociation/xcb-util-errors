@@ -2,9 +2,11 @@
 %define libname	%mklibname xcb-util-errors %{major}
 %define devname	%mklibname -d xcb-util-errors
 
+%global optflags %{optflags} -O3
+
 Name:           xcb-util-errors
 Version:        1.0
-Release:        1
+Release:        2
 Summary:        XCB errors library
 License:        MIT
 Group:          Development/Libraries/C and C++
@@ -52,15 +54,15 @@ This package contains the development headers for the library found
 in %lname.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 ./autogen.sh
 %configure --disable-static
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %doc COPYING
