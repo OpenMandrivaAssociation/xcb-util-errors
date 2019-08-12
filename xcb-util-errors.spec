@@ -55,6 +55,7 @@ in %lname.
 
 %prep
 %autosetup -p1
+%config_update
 
 %build
 ./autogen.sh
