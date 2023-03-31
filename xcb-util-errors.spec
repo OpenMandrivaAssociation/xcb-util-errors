@@ -7,7 +7,7 @@
 Summary:	XCB errors library
 Name:		xcb-util-errors
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries/C and C++
 Url:		http://xcb.freedesktop.org/
