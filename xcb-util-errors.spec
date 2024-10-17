@@ -10,7 +10,7 @@ Version:	1.0.1
 Release:	2
 License:	MIT
 Group:		Development/Libraries/C and C++
-Url:		http://xcb.freedesktop.org/
+Url:		https://xcb.freedesktop.org/
 Source0:	http://xcb.freedesktop.org/dist/%name-%version.tar.xz
 BuildRequires:	pkgconfig(xcb) >= 1.4
 BuildRequires:	pkgconfig(xcb-proto) >= 1.6
